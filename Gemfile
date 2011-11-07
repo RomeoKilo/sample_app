@@ -28,6 +28,11 @@ group :test do
   gem 'spork', '0.9.0.rc8'
 end
 
+# Heroku only!
+group :production do
+  gem 'pg'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
